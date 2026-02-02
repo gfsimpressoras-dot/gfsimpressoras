@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GFS Impressoras | Assistência Técnica</title>
+<meta name="description" content="Reset, manutenção e suporte técnico em impressoras Epson e outras marcas. Atendimento remoto ou presencial.">
+
+<style>
+:root{
+  --bg:#0b1220;
+  --txt:#eaf0ff;
+  --muted:#b8c2e0;
+  --brand:#22c55e;
+  --brand2:#38bdf8;
+  --pink:#f472b6;
+  --line:rgba(255,255,255,.14);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Roboto,Arial;
+  background:radial-gradient(900px 600px at 20% 10%, rgba(56,189,248,.18), transparent 60%),
+             radial-gradient(900px 600px at 80% 0%, rgba(244,114,182,.18), transparent 55%),
+             var(--bg);
+  color:var(--txt);
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:0 16px}
+
+/* TOPO */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(11,18,32,.75);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-1px;
+  height:3px;
+  background:linear-gradient(90deg,var(--brand2),var(--brand),var(--pink),var(--brand2));
+  background-size:200% 100%;
+  animation:neonMove 4s linear infinite;
+  box-shadow:0 0 10px rgba(56,189,248,.7),0 0 16px rgba(34,197,94,.6),0 0 20px rgba(244,114,182,.6);
+}
+@keyframes neonMove{from{background-position:0%}to{background-position:200%}}
+
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:12px 0;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand img{width:48px;height:48px;border-radius:50%}
+
+.nav{display:flex;gap:14px;align-items:center;color:var(--muted);font-weight:600}
+.nav a:hover{color:#fff}
+
+.btn{
+  padding:10px 14px;
+  border-radius:14px;
+  font-weight:800;
+  transition:.3s;
+}
+.btn-primary{background:linear-gradient(135deg,#22c55e,#16a34a);color:#04150a}
+.btn-secondary{background:linear-gradient(135deg,rgba(244,114,182,.35),rgba(56,189,248,.35))}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn-primary:hover{box-shadow:0 0 12px rgba(34,197,94,.8),0 0 24px rgba(34,197,94,.5)}
+.btn-secondary:hover{box-shadow:0 0 12px rgba(244,114,182,.7),0 0 24px rgba(56,189,248,.6)}
+
+/* HERO */
+.hero{padding:40px 0}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}}
+.card{
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+}
+h1{margin:0 0 10px;font-size:38px}
+.sub{color:var(--muted);line-height:1.6}
+
+/* SEÇÕES */
+.section{padding:24px 0}
+.section h2{margin-bottom:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+
+/* MAPA */
+.map-container{
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  height:0;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+.map-container iframe{
+  position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);margin-top:30px}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="logo.png" alt="GFS Impressoras">
+        <span>GFS Impressoras</span>
+      </div>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/gfsimpressoras" target="_blank">Instagram</a>
+      </nav>
+      <a class="btn btn-primary" href="https://wa.me/5585987292741" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+<section class="hero">
+  <div class="hero-grid">
+    <div class="card">
+      <h1>Reset e manutenção de impressoras Epson e outras</h1>
+      <p class="sub">Atendimento remoto ou presencial. Reset de almofada, instalação, limpeza e manutenção completa.</p>
+      <a class="btn btn-primary" href="https://wa.me/5585987292741" target="_blank">Chamar no WhatsApp</a>
+    </div>
+    <div class="card">
+      <b>Serviços mais pedidos</b>
+      <ul class="sub">
+        <li>Reset de almofada</li>
+        <li>Limpeza e manutenção</li>
+        <li>Instalação de drivers</li>
+        <li>Suporte técnico</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Serviços</h2>
+  <div class="grid3">
+    <div class="card">🔧 Reset de impressoras</div>
+    <div class="card">🧽 Limpeza e manutenção</div>
+    <div class="card">💻 Suporte e instalação</div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <h2>Contato</h2>
+  <p>📞 WhatsApp: (85) 98729-2741</p>
+  <p>📍 Maracanaú / Fortaleza</p>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps?q=Maracanaú%20CE&output=embed" loading="lazy"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 GFS Impressoras – Todos os direitos reservados.
+  </div>
+</footer>
+
+</body>
+</html>
